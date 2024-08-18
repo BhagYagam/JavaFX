@@ -22,8 +22,7 @@ public class Customer {
         this.address = address;
         this.dob = dob;
         this.cnum = cnum;
-        Customer customer = new Customer(id,name,address,title,dob,cnum);
-        System.out.println(customer);
+
     }
 
 }
