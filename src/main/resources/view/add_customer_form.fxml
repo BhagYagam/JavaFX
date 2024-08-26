@@ -13,7 +13,7 @@
       <JFXTextField fx:id="txtaddress" layoutX="310.0" layoutY="266.0" />
       <JFXTextField fx:id="txtname" layoutX="310.0" layoutY="208.0" />
       <JFXTextField fx:id="txtno" layoutX="310.0" layoutY="324.0" />
-      <Label alignment="CENTER" layoutX="-1.0" prefHeight="74.0" prefWidth="648.0" style="-fx-background-color: #E9967A;" text="Add Customer Form">
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="74.0" prefWidth="648.0" style="-fx-background-color: #E9967A;" text="Add Customer ">
          <font>
             <Font name="System Bold" size="51.0" />
          </font>

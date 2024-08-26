@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="462.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteCustomerFormController">
    <children>
       <JFXTextField fx:id="txtidd" layoutX="307.0" layoutY="173.0" />
@@ -31,7 +30,7 @@
       <JFXTextField fx:id="txtdob" layoutX="308.0" layoutY="409.0" />
       <JFXTextField fx:id="searchid" layoutX="227.0" layoutY="116.0" prefHeight="11.0" prefWidth="216.0" />
       <Label layoutX="123.0" layoutY="118.0" prefHeight="26.0" prefWidth="79.0" text="Search" />
-      <JFXButton layoutX="527.0" layoutY="114.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #B22222;" text="Search" textFill="WHITE">
+      <JFXButton layoutX="527.0" layoutY="114.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #708090;" text="Search" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

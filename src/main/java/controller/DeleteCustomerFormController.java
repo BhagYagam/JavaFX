@@ -117,10 +117,12 @@ public class DeleteCustomerFormController {
 
     @FXML
     void btnSearchOnAction(ActionEvent event) {
-        id = txtidd.getText();
+        id = searchid.getText();
+
         boolean isDelete = false;
 
         for (Customer customer : customerList) {
+            System.out.println(customer);
             if (customer.getId().equals(id)) {
                 txtnamed.setText(customer.getName());
                 txtaddressd.setText(customer.getAddress());

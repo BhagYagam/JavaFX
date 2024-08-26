@@ -44,6 +44,7 @@ public class SearchCustomerFormController {
             }
         }
 
+
         if (customerFound) {
             askForAnotherSearch();
         }else{
@@ -91,6 +92,5 @@ public class SearchCustomerFormController {
             txtnids.setEditable(true);
         }
     }
-
 }
 

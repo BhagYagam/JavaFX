@@ -38,7 +38,7 @@ public class UpdateCustomerFormController implements Initializable {
     private TableColumn<?, ?> coltitleu;
 
     @FXML
-    private TableView<?> tbldata;
+    private TableView<Customer> tbldata;
 
     @FXML
     private JFXTextField txtaddressu;
@@ -102,7 +102,7 @@ public class UpdateCustomerFormController implements Initializable {
         coladdressu.setCellValueFactory(new PropertyValueFactory<>("Address"));
         colconumu.setCellValueFactory(new PropertyValueFactory<>("ContactNumber"));
 
-        tbldata.getSelectionModel().selectedItemProperty().addListener(((observableValue, oldValue, newValue) -> {
+        tbldata.getSelectionModel().selectedItemProperty().addListener(((observableValue,newValue , oldValue) -> {
             if(newValue != null) {
                 setTexttoValue(newValue);
             }

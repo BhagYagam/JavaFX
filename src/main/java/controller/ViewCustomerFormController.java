@@ -27,7 +27,7 @@ public class ViewCustomerFormController implements Initializable {
     private TableColumn<?, ?> coldob;
 
     @FXML
-    private TableView<?> tbldata;
+    private TableView<Customer> tbldata;
 
     @FXML
     private TableColumn<?, ?> colid;
@@ -47,16 +47,18 @@ public class ViewCustomerFormController implements Initializable {
 
         List<Customer> customerList = DBConnection.getInstance().getConnection();
         ObservableList<Customer> customerObservableList = FXCollections.observableArrayList();
-
         customerList.forEach(obj->{
             customerObservableList.add(obj);
         });
 
         tbldata.setItems(customerObservableList);
+
     }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         colid.setCellValueFactory(new PropertyValueFactory<>("id"));
         colname.setCellValueFactory(new PropertyValueFactory<>("Name"));
         coladdress.setCellValueFactory(new PropertyValueFactory<>("Address"));
